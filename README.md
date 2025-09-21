@@ -14,8 +14,6 @@ Live Demo • Report Bug • Request Feature
 📖 Overview
 Sorting Algorithm Visualizer is an interactive React application that brings sorting algorithms to life through animated visualizations. This educational tool helps developers and students understand how different sorting algorithms work by watching them in action.
 
-https://via.placeholder.com/800x400/1a2a6c/ffffff?text=Sorting+Algorithm+Visualization
-
 🚀 Features
 🔢 Supported Algorithms
 Bubble Sort - Simple comparison-based algorithm
@@ -33,7 +31,7 @@ Play/Pause/Stop - Full control over the sorting process
 
 Dynamic Array Generation - Create new random arrays of varying sizes
 
-Speed Control - Adjust visualization speed (not shown in current UI but easily implementable)
+Speed Control - Adjust visualization speed
 
 🎨 Visual Indicators
 Blue - Unsorted elements
@@ -104,17 +102,6 @@ src/
 ├── App.css              # Styling and animations
 ├── index.js             # Application entry point
 └── index.css            # Global styles
-🔧 Algorithm Implementation Details
-Each algorithm is implemented with visualization hooks that:
-
-Track active elements being compared
-
-Update sorted elements in real-time
-
-Support pause/resume functionality
-
-Provide clean abort mechanism
-
 🌐 Deployment
 The application is deployed on Vercel for seamless continuous deployment:
 
@@ -155,18 +142,6 @@ Add sound effects for sorting actions
 
 Implement dark/light theme toggle
 
-📊 Performance Notes
-Time Complexity Visualized: See O(n²) vs O(n log n) differences
-
-Space Complexity: All visualizations are O(1) additional space
-
-Animation Smoothness: 60fps capable with proper React state management
-
-🐛 Known Issues
-Merge sort visualization may be less intuitive due to its divide-and-conquer nature
-
-Very large arrays (>100 elements) may cause performance issues on lower-end devices
-
 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
@@ -190,7 +165,5 @@ Contact the maintainer: Rishi Raj
 
 <div align="center">
 Built with ❤️ using React and DeepSeek inspiration
-
-https://img.shields.io/badge/Inspired%2520by-DeepSeek-blue?style=for-the-badge
 
 </div>
