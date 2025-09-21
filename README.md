@@ -9,6 +9,10 @@ A sleek, interactive web app to **see sorting algorithms in action**. Learn how 
 ![Sorting Visualizer Demo](https://s3.ezgif.com/tmp/ezgif-3aece1cbc9b9b1.gif)
 
 ---
+## 🔗 Live Demo
+
+👉 [View the app on Netlify](https://sorting-visualizer-kohl-two.vercel.app/)
+---
 
 ## 🔑 Key Features
 
