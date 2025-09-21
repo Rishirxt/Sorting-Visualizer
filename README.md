@@ -1,62 +1,196 @@
-<h1 align="center">
-  <br>
-  <a href="#"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Sorting Visualizer" width="200"></a>
-  <br>
-  Sorting Visualizer
-  <br>
-</h1>
+🧠 Sorting Algorithm Visualizer
+<div align="center">
+https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react
+https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel
+https://img.shields.io/badge/License-MIT-green?style=for-the-badge
+https://img.shields.io/github/issues/Rishirxt/Sorting-Visualizer?style=for-the-badge
+https://img.shields.io/github/stars/Rishirxt/Sorting-Visualizer?style=for-the-badge
 
-<h4 align="center">A visual tool to demonstrate sorting algorithms interactively using React.</h4>
+Experience sorting algorithms through beautiful visualizations ✨
 
-<p align="center">
-  <a href="#"><img src="https://img.shields.io/badge/React-v18-blue" alt="React"></a>
-  <a href="#"><img src="https://img.shields.io/badge/Electron-v25-lightgrey" alt="Electron"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
-</p>
+Live Demo • Report Bug • Request Feature
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#license">License</a>
-</p>
+</div>
+📖 Overview
+Sorting Algorithm Visualizer is an interactive React application that brings sorting algorithms to life through animated visualizations. This educational tool helps developers and students understand how different sorting algorithms work by watching them in action.
 
-![screenshot](https://raw.githubusercontent.com/yourusername/sorting-visualizer/main/demo.gif)
+https://via.placeholder.com/800x400/1a2a6c/ffffff?text=Sorting+Algorithm+Visualization
 
-## Key Features
+🚀 Features
+🔢 Supported Algorithms
+Bubble Sort - Simple comparison-based algorithm
 
-* Visualizes popular sorting algorithms like:
-  - Bubble Sort
-  - Selection Sort
-  - Insertion Sort
-  - Merge Sort
-* Step-by-step animation of sorting process
-* Adjustable array size and speed
-* Highlight comparisons and swaps
-* Responsive UI with clear visualization
-* Dark/Light mode support
-* Fully interactive: pause, play, and reset animations
-* Cross platform (Web/Desktop using Electron)
+Selection Sort - In-place comparison sorting
 
-## How To Use
+Insertion Sort - Builds sorted array one item at a time
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) installed on your computer. From your command line:
+Merge Sort - Efficient divide-and-conquer algorithm
 
-```bash
-# Clone this repository
-$ git clone https://github.com/yourusername/sorting-visualizer
+🎮 Interactive Controls
+Real-time Visualization - Watch elements sort with color-coded indicators
 
-# Go into the repository
-$ cd sorting-visualizer
+Play/Pause/Stop - Full control over the sorting process
 
-# Install dependencies
-$ npm install
+Dynamic Array Generation - Create new random arrays of varying sizes
 
-# Run the app
-$ npm start
+Speed Control - Adjust visualization speed (not shown in current UI but easily implementable)
+
+🎨 Visual Indicators
+Blue - Unsorted elements
+
+Dark Blue - Elements being compared
+
+Green - Sorted elements in correct position
+
+Number Labels - Clear value representation on each bar
+
+🛠️ Tech Stack
+Frontend Framework: React 18.2.0
+
+Styling: CSS3 with modern glassmorphism effects
+
+Build Tool: Create React App
+
+Deployment: Vercel
+
+Version Control: Git & GitHub
+
+📦 Installation
+Prerequisites
+Node.js (v14 or higher)
+
+npm or yarn package manager
+
+Local Development
+Clone the repository
+
+bash
+git clone https://github.com/Rishirxt/Sorting-Visualizer.git
+cd Sorting-Visualizer
+Install dependencies
+
+bash
+npm install
+Start development server
+
+bash
+npm start
+Open your browser
+Navigate to http://localhost:3000 to view the application
+
+Building for Production
+bash
+npm run build
+🎯 Usage
+Select an Algorithm: Choose from the available sorting algorithms
+
+Generate Array: Create a new random array to sort
+
+Start Visualization: Click "Start" to begin the sorting process
+
+Control Execution: Use Pause/Resume and Stop buttons as needed
+
+Observe: Watch the algorithm work with color-coded visual feedback
+
+📁 Project Structure
+text
+src/
+├── algorithms/           # Sorting algorithm implementations
+│   ├── bubbleSort.js
+│   ├── selectionSort.js
+│   ├── insertionSort.js
+│   └── mergeSort.js
+├── App.js               # Main application component
+├── App.css              # Styling and animations
+├── index.js             # Application entry point
+└── index.css            # Global styles
+🔧 Algorithm Implementation Details
+Each algorithm is implemented with visualization hooks that:
+
+Track active elements being compared
+
+Update sorted elements in real-time
+
+Support pause/resume functionality
+
+Provide clean abort mechanism
+
+🌐 Deployment
+The application is deployed on Vercel for seamless continuous deployment:
+
+Connect Repository to Vercel project
+
+Automatic Deployments on every push to main branch
+
+Preview Deployments for pull requests
+
+Custom Domain support (optional)
+
+Live Demo: https://sorting-visualizer-rishirxt.vercel.app/
+
+🤝 Contributing
+We welcome contributions! Please feel free to submit issues, feature requests, or pull requests.
+
+Contribution Guidelines
+Fork the project
+
+Create your feature branch (git checkout -b feature/AmazingFeature)
+
+Commit your changes (git commit -m 'Add some AmazingFeature')
+
+Push to the branch (git push origin feature/AmazingFeature)
+
+Open a Pull Request
+
+Development Tasks
+Add more sorting algorithms (Quick Sort, Heap Sort)
+
+Implement speed control slider
+
+Add array size customization
+
+Include algorithm complexity information
+
+Add sound effects for sorting actions
+
+Implement dark/light theme toggle
+
+📊 Performance Notes
+Time Complexity Visualized: See O(n²) vs O(n log n) differences
+
+Space Complexity: All visualizations are O(1) additional space
+
+Animation Smoothness: 60fps capable with proper React state management
+
+🐛 Known Issues
+Merge sort visualization may be less intuitive due to its divide-and-conquer nature
+
+Very large arrays (>100 elements) may cause performance issues on lower-end devices
+
+📝 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+🙏 Acknowledgments
+React team for the excellent framework
+
+Vercel for seamless deployment
+
+Computer science educators who inspired this visualization tool
+
+Open source community for continuous inspiration
+
+📞 Support
+If you have any questions or need help with the project:
+
+Open an issue
+
+Check the documentation
+
+Contact the maintainer: Rishi Raj
+
+<div align="center">
+Built with ❤️ using React and DeepSeek inspiration
+
+https://img.shields.io/badge/Inspired%2520by-DeepSeek-blue?style=for-the-badge
+
+</div>
