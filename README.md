@@ -6,7 +6,7 @@ A sleek, interactive web app to **see sorting algorithms in action**. Learn how 
 
 ## 🎬 Demo
 
-![Sorting Visualizer Demo](https://raw.githubusercontent.com/yourusername/sorting-visualizer/main/demo.gif)
+![Sorting Visualizer Demo](https://s3.ezgif.com/tmp/ezgif-3aece1cbc9b9b1.gif)
 
 ---
 
