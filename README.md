@@ -1,112 +1,62 @@
-Sorting Algorithm Visualizer
-A React-based web application that visually demonstrates how different sorting algorithms work. This interactive tool helps users understand the inner workings of popular sorting algorithms through animated visualizations.
+<h1 align="center">
+  <br>
+  <a href="#"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Sorting Visualizer" width="200"></a>
+  <br>
+  Sorting Visualizer
+  <br>
+</h1>
 
-https://img.shields.io/badge/demo-live-brightgreen
-https://img.shields.io/badge/license-MIT-blue.svg
-https://img.shields.io/badge/React-18.x-blue
+<h4 align="center">A visual tool to demonstrate sorting algorithms interactively using React.</h4>
 
-https://via.placeholder.com/800x400.png?text=Sorting+Visualizer+Screenshot
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/React-v18-blue" alt="React"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Electron-v25-lightgrey" alt="Electron"></a>
+  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
+      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
+  </a>
+  <a href="https://www.paypal.me/AmitMerchant">
+    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
+  </a>
+</p>
 
-🚀 Features
-Multiple Algorithms: Visualize Bubble Sort, Selection Sort, Insertion Sort, and Merge Sort
+<p align="center">
+  <a href="#key-features">Key Features</a> •
+  <a href="#how-to-use">How To Use</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#license">License</a>
+</p>
 
-Interactive Controls: Play, Pause, and Stop the sorting process
+![screenshot](https://raw.githubusercontent.com/yourusername/sorting-visualizer/main/demo.gif)
 
-Real-time Visualization: Watch elements move and change color as they're being sorted
+## Key Features
 
-Responsive Design: Works on desktop and mobile devices
+* Visualizes popular sorting algorithms like:
+  - Bubble Sort
+  - Selection Sort
+  - Insertion Sort
+  - Merge Sort
+* Step-by-step animation of sorting process
+* Adjustable array size and speed
+* Highlight comparisons and swaps
+* Responsive UI with clear visualization
+* Dark/Light mode support
+* Fully interactive: pause, play, and reset animations
+* Cross platform (Web/Desktop using Electron)
 
-Customizable: Adjust array size and sorting speed
+## How To Use
 
-🛠️ Built With
-React.js - Frontend framework
+To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) installed on your computer. From your command line:
 
-CSS3 - Styling and animations
+```bash
+# Clone this repository
+$ git clone https://github.com/yourusername/sorting-visualizer
 
-Vercel - Deployment platform
+# Go into the repository
+$ cd sorting-visualizer
 
-📦 Installation
-To run this project locally:
+# Install dependencies
+$ npm install
 
-Clone the repository
-
-sh
-git clone https://github.com/Rishirxt/Sorting-Visualizer.git
-Navigate to the project directory
-
-sh
-cd Sorting-Visualizer
-Install dependencies
-
-sh
-npm install
-Start the development server
-
-sh
-npm start
-Open http://localhost:3000 to view it in the browser
-
-🎮 Usage
-Select an Algorithm: Choose from Bubble Sort, Selection Sort, Insertion Sort, or Merge Sort
-
-Generate New Array: Create a new random array to sort
-
-Start Sorting: Click the "Start" button to begin the visualization
-
-Control the Process: Use Pause/Resume and Stop buttons during sorting
-
-Observe: Watch as elements change color to show their current state:
-
-Blue: Normal elements
-
-Dark Blue: Elements being compared
-
-Green: Sorted elements
-
-📁 Project Structure
-text
-src/
-├── algorithms/
-│   ├── bubbleSort.js
-│   ├── selectionSort.js
-│   ├── insertionSort.js
-│   └── mergeSort.js
-├── App.js
-├── App.css
-└── index.js
-🌐 Live Demo
-Check out the live application: Sorting Visualizer Demo
-
-🤝 Contributing
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-Fork the Project
-
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-
-Commit your Changes (git commit -m 'Add some AmazingFeature')
-
-Push to the Branch (git push origin feature/AmazingFeature)
-
-Open a Pull Request
-
-📝 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-👨‍💻 Author
-Rishi Raj
-
-GitHub: @Rishirxt
-
-Project Link: https://github.com/Rishirxt/Sorting-Visualizer
-
-🙏 Acknowledgments
-Inspired by various sorting visualizations found online
-
-Thanks to the React community for excellent documentation and resources
-
-Icons provided by GitHub Octicons
-
-<p align="center"> Made with ❤️ using React </p><p align="right">(<a href="#readme-top">back to top</a>)</p>
+# Run the app
+$ npm start
