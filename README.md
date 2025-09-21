@@ -4,6 +4,12 @@ A sleek, interactive web app to **see sorting algorithms in action**. Learn how 
 
 ---
 
+## 🎬 Demo
+
+![Sorting Visualizer Demo](https://raw.githubusercontent.com/yourusername/sorting-visualizer/main/demo.gif)
+
+---
+
 ## 🔑 Key Features
 
 - **Real-time visualization** – Watch the array get sorted in real time.  
@@ -14,13 +20,6 @@ A sleek, interactive web app to **see sorting algorithms in action**. Learn how 
 - **Dark & Light Mode** – Easy on the eyes for long coding sessions.  
 - **Interactive controls** – Play, pause, reset, or shuffle anytime.  
 - **Cross-platform** – Works on web, and can be packaged with Electron for desktop.  
-
----
-
-## 🎬 Demo
-
-![Sorting Visualizer Demo](https://raw.githubusercontent.com/yourusername/sorting-visualizer/main/demo.gif)
-
 ---
 
 ## 🛠 How to Run Locally
