@@ -6,7 +6,7 @@ A sleek, interactive web app to **see sorting algorithms in action**. Learn how 
 
 ## 🎬 Demo
 
-![Sorting Visualizer Demo](https://s3.ezgif.com/tmp/ezgif-3aece1cbc9b9b1.gif)
+![Sorting Visualizer Demo](<img width="1638" height="850" alt="git_demo" src="https://github.com/user-attachments/assets/f729347d-9eec-403a-9f83-11cfed8d7608" />)
 
 ---
 👉 [View the app on Vercel](https://sorting-visualizer-kohl-two.vercel.app/)
