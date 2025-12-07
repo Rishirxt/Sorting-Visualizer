@@ -4,10 +4,6 @@ A sleek, interactive web app to **see sorting algorithms in action**. Learn how 
 
 ---
 
-## 🎬 Demo
-
-![Sorting Visualizer Demo](file:///C:/Users/Admin/Downloads/git_demo.png)
-
 ---
 👉 [View the app on Vercel](https://sorting-visualizer-kohl-two.vercel.app/)
 ---
