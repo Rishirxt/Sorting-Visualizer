@@ -37,8 +37,10 @@ const merge = async (
     
     if (!sortingRef.current) break;
     
-    // Highlight the current indices being compared
-    setActiveIndices([left + i, mid + 1 + j]);
+    // Highlight the current indices being compared and the position being written
+    const leftIdx = left + i;
+    const rightIdx = mid + 1 + j;
+    setActiveIndices([leftIdx, rightIdx, k]);
     
     // Wait for a bit to visualize
     await new Promise(resolve => setTimeout(resolve, speed));
@@ -52,6 +54,7 @@ const merge = async (
     }
     
     setArray([...arr]);
+    setActiveIndices([k]);
     k++;
     
     // Wait for a bit to visualize
@@ -60,6 +63,12 @@ const merge = async (
   
   // Copy the remaining elements of L[], if there are any
   while (i < n1 && sortingRef.current) {
+    if (pausedRef.current && sortingRef.current) {
+      await new Promise(resolve => setTimeout(resolve, 100));
+    }
+    if (!sortingRef.current) break;
+    
+    setActiveIndices([k]);
     arr[k] = L[i];
     i++;
     k++;
@@ -71,6 +80,12 @@ const merge = async (
   
   // Copy the remaining elements of R[], if there are any
   while (j < n2 && sortingRef.current) {
+    if (pausedRef.current && sortingRef.current) {
+      await new Promise(resolve => setTimeout(resolve, 100));
+    }
+    if (!sortingRef.current) break;
+    
+    setActiveIndices([k]);
     arr[k] = R[j];
     j++;
     k++;

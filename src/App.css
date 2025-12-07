@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #1a2a6c, #2c3e50);
+  background: #2c3e50;
   color: #fff;
   min-height: 100vh;
   padding: 20px;
@@ -23,20 +23,18 @@ body {
 
 .app-header {
   text-align: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 25px;
+  background: #34495e;
+  border-radius: 12px;
   width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .app-header h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
   color: white;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 600;
 }
 
 .app-header p {
@@ -46,11 +44,12 @@ body {
 
 /* Algorithm Selection */
 .algorithm-selection {
-  background: rgba(255, 255, 255, 0.1);
+  background: #34495e;
   padding: 20px;
-  border-radius: 16px;
+  border-radius: 12px;
   width: 100%;
   text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .algorithm-selection h2 {
@@ -67,26 +66,25 @@ body {
 }
 
 .algo-btn {
-  padding: 12px 20px;
+  padding: 12px 24px;
   border: none;
-  border-radius: 50px;
-  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  background: #7f8c8d;
   color: white;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   border: 2px solid transparent;
 }
 
 .algo-btn:hover:not(:disabled) {
-  background: rgba(255, 255, 255, 0.25);
+  background: #95a5a6;
   transform: translateY(-2px);
 }
 
 .algo-btn.active {
-  background: linear-gradient(45deg, #3498db, #2c3e50);
-  border-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.4);
+  background: #3498db;
+  border-color: #2980b9;
 }
 
 .algo-btn:disabled {
@@ -97,53 +95,75 @@ body {
 /* Visualization */
 .visualization-container {
   width: 100%;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 16px;
-  padding: 20px;
+  background: #ecf0f1;
+  border-radius: 12px;
+  padding: 25px;
   overflow-x: auto;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bar-container {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
   height: 350px;
   padding: 20px 10px;
   min-width: min-content;
+  width: 100%;
 }
 
 .bar {
-  background: linear-gradient(to top, #2980b9, #3498db);
-  width: 28px;
-  border-radius: 5px 5px 0 0;
+  background: #3498db;
+  flex: 1;
+  min-width: 8px;
+  max-width: 50px;
+  border-radius: 4px 4px 0 0;
   display: flex;
   justify-content: center;
-  transition: height 0.2s ease;
+  align-items: flex-start;
+  transition: all 0.2s ease;
   position: relative;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .bar-value {
   position: absolute;
   bottom: -25px;
-  font-size: 12px;
-  font-weight: bold;
+  font-size: 11px;
+  font-weight: 600;
   color: #2c3e50;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 2px 4px;
+  background: white;
+  padding: 3px 5px;
   border-radius: 4px;
-  min-width: 20px;
+  min-width: 22px;
   text-align: center;
 }
 
 .bar.active {
-  background: linear-gradient(to top, #1a5276, #2c3e50);
+  background: #e74c3c;
+}
+
+.bar.active .bar-value {
+  background: #e74c3c;
+  color: white;
 }
 
 .bar.sorted {
-  background: linear-gradient(to top, #27ae60, #2ecc71);
+  background: #27ae60;
+}
+
+.bar.sorted .bar-value {
+  background: #27ae60;
+  color: white;
+}
+
+.bar.sorted.active {
+  background: #27ae60;
 }
 
 /* Controls */
@@ -151,7 +171,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 15px;
+  gap: 12px;
   width: 100%;
 }
 
@@ -161,37 +181,37 @@ body {
   gap: 8px;
   padding: 14px 24px;
   border: none;
-  border-radius: 50px;
+  border-radius: 8px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   color: white;
 }
 
 .control-btn.generate {
-  background: linear-gradient(45deg, #3498db, #2980b9);
+  background: #7f8c8d;
 }
 
 .control-btn.start {
-  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  background: #27ae60;
 }
 
 .control-btn.pause {
-  background: linear-gradient(45deg, #f39c12, #e67e22);
+  background: #f39c12;
 }
 
 .control-btn.resume {
-  background: linear-gradient(45deg, #2ecc71, #27ae60);
+  background: #27ae60;
 }
 
 .control-btn.stop {
-  background: linear-gradient(45deg, #e74c3c, #c0392b);
+  background: #e74c3c;
 }
 
 .control-btn:hover:not(:disabled) {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .control-btn:disabled {
@@ -203,12 +223,14 @@ body {
 /* Status */
 .status {
   padding: 15px 25px;
-  border-radius: 50px;
+  border-radius: 8px;
   font-weight: 600;
-  background: rgba(255, 255, 255, 0.1);
+  background: #34495e;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .status-sorting, .status-ready {
@@ -223,7 +245,7 @@ body {
   border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   border-top-color: white;
-  animation: spin 1s ease-in-out infinite;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
@@ -245,29 +267,29 @@ body {
   }
   
   .algo-btn {
-    padding: 10px 15px;
+    padding: 10px 18px;
     font-size: 0.9rem;
   }
   
   .bar-container {
     height: 300px;
-    gap: 4px;
+    gap: 3px;
   }
   
   .bar {
-    width: 20px;
+    min-width: 6px;
   }
   
   .bar-value {
-    font-size: 10px;
+    font-size: 9px;
     bottom: -22px;
-    padding: 1px 3px;
-    min-width: 16px;
+    padding: 2px 4px;
+    min-width: 18px;
   }
   
   .controls {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
   }
   
   .control-btn {

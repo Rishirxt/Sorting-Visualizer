@@ -44,7 +44,11 @@ export const insertionSort = async (
       
       // Update array and highlight
       setArray([...arr]);
-      setActiveIndices([j + 1, j + 2]);
+      if (j >= 0) {
+        setActiveIndices([j + 1, j]);
+      } else {
+        setActiveIndices([j + 1]);
+      }
       
       // Wait for a bit to visualize
       await new Promise(resolve => setTimeout(resolve, speed));

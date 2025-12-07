@@ -1,12 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
-import { bubbleSort } from "./algorithms/bubbleSort.js";
+import { bubbleSort } from "./algorithms/bubbleSort";
 import { selectionSort } from "./algorithms/selectionSort";
 import { insertionSort } from "./algorithms/insertionSort";
 import { mergeSort } from "./algorithms/mergeSort";
 
-const ARRAY_SIZE = 30;
-const SPEED = 500; // ms delay for sorting steps
+const MIN_ARRAY_SIZE = 10;
+const MAX_ARRAY_SIZE = 100;
+const DEFAULT_ARRAY_SIZE = 50;
+const MIN_SPEED = 1;
+const MAX_SPEED = 50;
+const DEFAULT_SPEED = 0.5;
+const SPEED = 300; // ms delay for sorting steps - slow enough to see each step clearly
 
 export default function App() {
   const [array, setArray] = useState([]);
@@ -15,8 +20,10 @@ export default function App() {
   const [algorithm, setAlgorithm] = useState("bubble");
   const [activeIndices, setActiveIndices] = useState([]);
   const [sortedIndices, setSortedIndices] = useState([]);
-  const sortingRef = useRef(false); // To track if sorting is in progress for stop functionality
-
+  const [arraySize, setArraySize] = useState(DEFAULT_ARRAY_SIZE);
+  const [speed, setSpeed] = useState(DEFAULT_SPEED);
+  const [stats, setStats] = useState({ comparisons: 0, swaps: 0, startTime: null, endTime: null });
+  const sortingRef = useRef(false);
   const pausedRef = useRef(paused);
 
   useEffect(() => {
@@ -25,7 +32,7 @@ export default function App() {
   }, []);
 
   const generateArray = () => {
-    const arr = Array.from({ length: ARRAY_SIZE }, () =>
+    const arr = Array.from({ length: arraySize }, () =>
       Math.floor(Math.random() * 100) + 5
     );
     setArray(arr);
